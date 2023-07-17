@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/广州市背景图.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.nav {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+.nav .city-name {
+    float: left;
+    width: 220px;
+    height: 100px;
+}
+
+.city-name img {
+    width: 220px;
+    height: 100px;
+    opacity: 0.8;
+}
+
+.nav li {
+    float: left;
+    width: 120px;
+    height: 80px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.nav li a {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font: 20px 'Microsoft yahei';
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav ul div {
+    text-align: center;
+}
+
+.nav .city-logo {
+    position: absolute;
+    width: 140px;
+    height: 100px;
+    right: 0;
+}
+
+.city-logo img {
+    width: 140px;
+    height: 100px;
+}
+
+.Box {
+    position: relative;
+}
+
+.box {
+    position: absolute;
+    width: 120px;
+    height: 158px;
+    top: 90px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.box span {
+    display: block;
+    border-bottom: 2px solid black;
+}
+
+.box span a {
+    width: 120px;
+    height: 30px;
+    margin: 0;
+    font: 18px 'Microsoft yahei';
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: #ffffff;
+}
+
+/* 点击事件，经过Box时将box展示出来 */
+.Box:hover .box {
+    display: block;
+}
+
+.video-overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.close {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 185px;
+    right: 425px;
+    border-radius: 15px;
+}
+
+.close img {
+    width: 25px;
+    height: 30px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    margin: 10% auto;
+}
+
+.video-container video {
+    width: 500px;
+    height: 300px;
+}
+
+.video-introduce {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    width: 200px;
+    height: 80px;
+    transform: translateX(-50%);
+}
+
+.video-introduce .open {
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.video-introduce .open img {
+    width: 50px;
+    height: 50px;
+}
+
+.video-introduce h4 {
+    text-align: center;
+    font: 20px 'Microsoft yahei';
+    background-color: rgba(0, 0, 0, 0.35);
+}
